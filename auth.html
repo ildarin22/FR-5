@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="getCode" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Авторизация</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">    
+                <form id="authForm">
+                    <input type="text" name="email" placeholder="Почта" style="width: 180px;">
+                    <p></p>
+                    <input type="submit" value="Получить код">
+                    <button onclick="location.href = '#submitCode'">Ввести код</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="submitCode">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Подверждение</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">    
+                <form id="authForm">
+                    <input type="text" name="code" placeholder="Код" style="width: 180px;">
+                    <p></p>
+                    <input type="submit" value="Войти">
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#getCode">Открыть модальное окно</a>
+      <script src="main.js"></script>
+</body>
+</html>
